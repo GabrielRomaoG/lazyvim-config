@@ -3,3 +3,7 @@
 -- Add any additional keymaps here
 
 vim.keymap.set({ "i", "n", "v" }, "<C-C>", "<esc>", { desc = "Make Ctrl+C behave exactly like escape." })
+
+-- buffers
+vim.keymap.set("n", "<leader>bc", "<cmd>Cppath<CR>", { desc = "Copy current buffer relative path." })
+vim.keymap.set("n", "<leader>bC", "<cmd>Cppath abs<CR>", { desc = "Copy current buffer absolute path." })
