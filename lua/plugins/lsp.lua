@@ -46,10 +46,6 @@ return {
             forwardSearch = {
               args = {},
             },
-            latexFormatter = "latexindent",
-            latexindent = {
-              modifyLineBreaks = true,
-            },
           },
         },
       },
