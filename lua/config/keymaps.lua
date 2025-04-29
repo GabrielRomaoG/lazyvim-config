@@ -7,3 +7,13 @@ vim.keymap.set({ "i", "n", "v" }, "<C-C>", "<esc>", { desc = "Make Ctrl+C behave
 -- buffers
 vim.keymap.set("n", "<leader>bc", "<cmd>Cppath<CR>", { desc = "Copy current buffer relative path." })
 vim.keymap.set("n", "<leader>bC", "<cmd>Cppath abs<CR>", { desc = "Copy current buffer absolute path." })
+
+-- luasnip
+local ls = require("luasnip")
+vim.keymap.set({ "i", "s" }, "<c-o>", function()
+    if ls.expandable() then
+        ls.expand()
+    elseif ls.expand_or_locally_jumpable() then
+        ls.expand_or_jump()
+    end
+end, { desc = "Expand snippet" })
