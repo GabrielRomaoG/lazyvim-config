@@ -17,3 +17,7 @@ vim.keymap.set({ "i", "s" }, "<c-o>", function()
         ls.expand_or_jump()
     end
 end, { desc = "Expand snippet" })
+
+-- LSP
+
+vim.keymap.set("n", "<leader>cp", "<cmd>LspRestart<cr>", { desc = "LSP: Restart", silent = true })
