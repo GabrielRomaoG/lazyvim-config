@@ -1,3 +1,3 @@
 return {
-    "evesdropper/luasnip-latex-snippets.nvim",
+    "GabrielRomaoG/luasnip-latex-snippets.nvim",
 }
