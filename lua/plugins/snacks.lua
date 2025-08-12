@@ -1,8 +1,8 @@
 return {
-  "snacks.nvim",
-  opts = {
-    dashboard = {
-      preset = {
+    "snacks.nvim",
+    opts = {
+        dashboard = {
+            preset = {
         -- stylua: ignore
         ---@type snacks.dashboard.Item[]
         keys = {
@@ -16,7 +16,19 @@ return {
           { icon = "󰒲 ", key = "l", desc = "Lazy", action = ":Lazy" },
           { icon = " ", key = "q", desc = "Quit", action = ":qa" },
         },
-      },
+            },
+        },
+        image = {
+            doc = {
+                enabled = true,
+                inline = false,
+                float = true,
+            },
+            math = {
+                latex = {
+                    font_size = "normal",
+                },
+            },
+        },
     },
-  },
 }
