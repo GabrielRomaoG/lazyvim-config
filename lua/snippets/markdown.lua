@@ -7,11 +7,6 @@ local i = ls.insert_node
 return {
     ls.add_snippets("markdown", {
         s("$", {
-            t({ "$", "\t" }),
-            i(1),
-            t({ "", "$" }),
-        }),
-        s("i$", {
             t({ "$" }),
             i(1),
             t({ "$" }),
