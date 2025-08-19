@@ -15,11 +15,10 @@ local fmta = require("luasnip.extras.fmt").fmta
 
 return {
     ls.add_snippets("python", {
-        -- Begin question
-        s({ trig = "docstr", name = "docstring" }, {
-            t({ '"""', "" }),
+        s({ trig = "%%", name = "add cell block" }, {
+            t({ "# %%", "" }),
             i(1),
-            t({ "", '"""' }),
+            t({ "", "# %%" }),
         }),
     }),
 }
