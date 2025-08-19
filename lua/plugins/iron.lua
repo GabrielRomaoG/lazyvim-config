@@ -13,6 +13,7 @@ return {
                         -- Can be a table or a function that
                         -- returns a table (see below)
                         command = { "ipython" },
+                        block_dividers = { "# %%", "#%%" },
                     },
                 },
                 -- How the repl window will be displayed
@@ -27,6 +28,7 @@ return {
                 send_file = "<space>rf",
                 send_line = "<space>rl",
                 send_mark = "<space>rm",
+                send_code_block = "<leader>rb",
                 mark_motion = "<space>rmc",
                 mark_visual = "<space>rmc",
                 remove_mark = "<space>rmd",
