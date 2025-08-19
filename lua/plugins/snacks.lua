@@ -21,7 +21,7 @@ return {
         image = {
             doc = {
                 enabled = true,
-                inline = false,
+                inline = true,
                 float = true,
             },
             math = {
