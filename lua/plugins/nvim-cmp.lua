@@ -20,6 +20,7 @@ return {
                 -- ["<C-f>"] = cmp.mapping.scroll_docs(4),
                 -- ["<C-Space>"] = cmp.mapping.complete(),
                 ["<C-o>"] = LazyVim.cmp.confirm({ select = true }),
+                ["<Tab>"] = vim.NIL,
                 -- -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
                 -- ["<S-CR>"] = LazyVim.cmp.confirm({ behavior = cmp.ConfirmBehavior.Replace }),
                 -- ["<C-CR>"] = function(fallback)
